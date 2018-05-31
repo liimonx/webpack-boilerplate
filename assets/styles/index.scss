@@ -1,9 +1,23 @@
-// Apply a natural box layout model to all elements
-// but allowing components to change
-// http://www.paulirish.com/2012/box-sizing-border-box-ftw/
-html {
-    box-sizing: border-box;
-}
-*, *:before, *:after {
-    box-sizing: inherit;
-}
+// External libs
+@import '../../node_modules/breakpoint-sass/stylesheets/breakpoint';
+
+// Functions
+@import 'functions/rem-calc';
+
+// Core
+@import 'core/reset';
+@import 'core/accessibility';
+@import 'core/breakpoints';
+@import 'core/colors';
+@import 'core/fonts';
+@import 'core/global';
+@import 'core/page-layout';
+@import 'core/typography';
+
+// Components
+@import 'components/buttons';
+@import 'components/lists';
+@import 'components/tabs';
+
+// Templates
+@import 'templates/example';
